@@ -17,9 +17,11 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout your repository (with submodules)
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
+          submodules: true
+          token: ${{ secrets.GH_PAT }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22

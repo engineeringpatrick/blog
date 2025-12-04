@@ -44,7 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
         return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
       },
     }),
-    Component.Image(),
+    Component.DesktopOnly(Component.Image()),
   ],
   right: [
     Component.Graph(),
@@ -73,7 +73,7 @@ export const defaultListPageLayout: PageLayout = {
         return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
       },
     }),
-    Component.Image(),
+    Component.DesktopOnly(Component.Image()),
   ],
   right: [],
 }

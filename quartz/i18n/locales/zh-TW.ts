@@ -36,7 +36,7 @@ export default {
       title: "探索",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "Powered by",
     },
     graph: {
       title: "關係圖譜",

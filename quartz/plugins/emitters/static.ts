@@ -1,8 +1,8 @@
+import fs from "fs"
+import { dirname } from "path"
+import { glob } from "../../util/glob"
 import { FilePath, QUARTZ, joinSegments } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
-import fs from "fs"
-import { glob } from "../../util/glob"
-import { dirname } from "path"
 
 export const Static: QuartzEmitterPlugin = () => ({
   name: "Static",

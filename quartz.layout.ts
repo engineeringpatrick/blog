@@ -8,8 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "Homepage": "https://patrickdeniso.com",
+      "Linkedin": "https://www.linkedin.com/in/patrick-deniso",
+      "GitHub": "https://github.com/engineeringpatrick/",
     },
   }),
 }
@@ -43,6 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
         return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
       },
     }),
+    Component.Image(),
   ],
   right: [
     Component.Graph(),
@@ -71,6 +73,7 @@ export const defaultListPageLayout: PageLayout = {
         return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
       },
     }),
+    Component.Image(),
   ],
   right: [],
 }

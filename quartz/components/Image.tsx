@@ -25,6 +25,7 @@ Image.css = `
 .sidebar-img {
   opacity: 0.5;
   object-fit: cover;
+  margin-top: 0;
 }
 `
 export default (() => Image) satisfies QuartzComponentConstructor;

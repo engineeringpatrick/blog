@@ -8,9 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "Homepage": "https://patrickdeniso.com",
-      "Linkedin": "https://www.linkedin.com/in/patrick-deniso",
-      "GitHub": "https://github.com/engineeringpatrick/",
+      Homepage: "https://patrickdeniso.com",
+      Linkedin: "https://www.linkedin.com/in/patrick-deniso",
+      GitHub: "https://github.com/engineeringpatrick/",
     },
   }),
 }
@@ -41,7 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       sortFn: (a, b) => {
-        return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
+        return (a.data?.slug ?? "").toString().localeCompare((b.data?.slug ?? "").toString())
       },
     }),
     Component.DesktopOnly(Component.Image()),
@@ -70,7 +70,7 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer({
       sortFn: (a, b) => {
-        return (a.data?.slug ?? '').toString().localeCompare((b.data?.slug ?? '').toString())
+        return (a.data?.slug ?? "").toString().localeCompare((b.data?.slug ?? "").toString())
       },
     }),
     Component.DesktopOnly(Component.Image()),

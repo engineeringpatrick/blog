@@ -3,16 +3,16 @@ on:
   push:
     branches:
       - main
- 
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout your repository (with submodules)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
           submodules: true
           token: ${{ secrets.GH_PAT }}
       - uses: actions/setup-node@v4
@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
- 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

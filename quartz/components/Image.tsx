@@ -1,17 +1,14 @@
-import { classNames } from "../util/lang";
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types";
+import { classNames } from "../util/lang"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-const Image: QuartzComponent = ({displayClass}: QuartzComponentProps) => {
+const Image: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
-      <a 
-        class={classNames(displayClass, "sidebar-a")}
-        href={`https://www.weforum.org/stories/2021/12/humans-multiplanetary-species`}
-        target={`_blank`}
-        >
-        <img 
-            class={classNames(displayClass, "sidebar-img")} 
-            src={`/static/astronaut.jpeg`}
-        />
+    <a
+      class={classNames(displayClass, "sidebar-a")}
+      href={`https://www.weforum.org/stories/2021/12/humans-multiplanetary-species`}
+      target={`_blank`}
+    >
+      <img class={classNames(displayClass, "sidebar-img")} src={`/static/astronaut.jpeg`} />
     </a>
   )
 }
@@ -28,4 +25,4 @@ Image.css = `
   margin-top: 0;
 }
 `
-export default (() => Image) satisfies QuartzComponentConstructor;
+export default (() => Image) satisfies QuartzComponentConstructor

@@ -26,9 +26,30 @@ import TableOfContents from "./TableOfContents"
 import TagList from "./TagList"
 
 export {
-  ArticleTitle, Backlinks, Breadcrumbs,
-  Comments, ConditionalRender, Content, ContentMeta, Darkmode, DesktopOnly, Explorer, Flex, FolderContent, Footer, Graph, Head,
-  Image, MobileOnly, NotFound, PageTitle, ReaderMode, RecentNotes, Search, Spacer,
-  TableOfContents, TagContent, TagList
+  ArticleTitle,
+  Backlinks,
+  Breadcrumbs,
+  Comments,
+  ConditionalRender,
+  Content,
+  ContentMeta,
+  Darkmode,
+  DesktopOnly,
+  Explorer,
+  Flex,
+  FolderContent,
+  Footer,
+  Graph,
+  Head,
+  Image,
+  MobileOnly,
+  NotFound,
+  PageTitle,
+  ReaderMode,
+  RecentNotes,
+  Search,
+  Spacer,
+  TableOfContents,
+  TagContent,
+  TagList,
 }
-

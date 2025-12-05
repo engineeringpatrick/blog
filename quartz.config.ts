@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "blog.patrickdeniso.com",
-    ignorePatterns: ["private", "templates", ".obsidian", "books", "daily-checkins","thoughts"],
+    ignorePatterns: ["private", "templates", ".obsidian", "books", "daily-checkins"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
